@@ -39,8 +39,12 @@ export default function App() {
           </View>
           <Text className="text-sm font-pregular 
           text-gray-100 mt-7 text-center">Where creativity meets innovation:
-            emabark on the journey of limitless exploration
+            embark on the journey of limitless exploration
           </Text>
+
+          <Link href="/(auth)/Sign-in">
+            Log in
+          </Link>
 
           <CustomButton
            title="Continue with Email"
