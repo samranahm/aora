@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images} from '../../constants';
 import { Link } from 'expo-router';
+import { createUser } from '../../lib/appwrite';
 
 import FormField from '../../components/FormField';
 import CustomButton from '../../components/CustomButton';
@@ -15,9 +16,11 @@ const SignUp = () => {
   })
   const [isSubmitting, setIsSubmitting]=useState(false)
 
-  const submit = () =>{
+  const submit = async () =>{
+    await createUser(form.email, form.password, form.username);
+    setIsSubmitting(true);
+    };
 
-  }
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView>
@@ -26,10 +29,10 @@ const SignUp = () => {
             <Image 
               source={images.logo}
               resizeMode='contain'
-              className="w-[115px] h-[130px]"
+              className="w-[115px] h-[80px]"
               />
-              <Text className="text-2xl text-white 
-              text-semibold mt-10 font-psemibold">
+              <Text className="text-2xl mt-2 text-white 
+              text-semibold font-psemibold">
                 Sign up to Aora
               </Text>
               
@@ -37,7 +40,7 @@ const SignUp = () => {
                 title="Username"
                 value={form.username}
                 handleChangeText={(e) => setForm({...form,
-                uername: e })}
+                username: e })}
                 otherStyles="mt-10"
               />
 
@@ -56,21 +59,21 @@ const SignUp = () => {
                 handleChangeText={(e) => setForm({...form,
                 password: e })}
                 otherStyles="mt-7"
-                keybordType="email-address"
+                keyboardType="default"
               />
 
               <CustomButton
-                title="title"
+                title="Sign Up"
                 handlePress={submit}
                 containerStyle="mt-7"
                 isLoading={isSubmitting}
                 />
 
                 <View className="justify-center pt-5 flex-row 
-                gap-2">
+                gap-1">
                   <Text className="text-lg text-gray-100
                   font-pregular">
-                    Have an account already?
+                    Already have an account?
                   </Text>
                   <Link href="/Sign-in"
                    className='text-lg font-psemibold 

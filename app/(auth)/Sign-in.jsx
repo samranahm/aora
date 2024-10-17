@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images} from '../../constants';
 import { Link } from 'expo-router';
+import { createUser } from '../../lib/appwrite';
 
 import FormField from '../../components/FormField';
 import CustomButton from '../../components/CustomButton';
@@ -14,7 +15,9 @@ const SignIn = () => {
   })
   const [isSubmitting, setIsSubmitting]=useState(false)
 
-  const submit = () =>{
+  const submit = async() =>{
+    await createUser(form.email, form.password);
+
 
   }
   return (
@@ -51,7 +54,7 @@ const SignIn = () => {
               />
 
               <CustomButton
-                title="title"
+                title="Sign In"
                 handlePress={submit}
                 containerStyle="mt-7"
                 isLoading={isSubmitting}
