@@ -35,7 +35,6 @@ export const useGlobalContext = () => useContext
                 setIsLoggedIn,
                 user,
                 setUser,
-                setUser,
                 isLoading
 
             }}
