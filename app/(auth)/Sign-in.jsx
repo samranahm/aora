@@ -17,10 +17,9 @@ const SignIn = () => {
   const submit = async () => {
     if (!form.email || !form.password) {
       Alert.alert("Error", "Please fill in all the fields");
+      return;
     }
-
     setIsSubmitting(true);
-    await signIn(form.email, form.password);
     try {
       await signIn(form.email, form.password);
       router.replace("/home");
