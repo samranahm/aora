@@ -1,50 +1,43 @@
-# Welcome to your Expo app 👋
+# Aora
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<!--[Aora Logo](under-development) -->
 
-## Get started
+## Overview
 
-1. Install dependencies
+Aora is a cutting-edge mobile application that enables users to generate AI-driven videos using creative prompts. Beyond video creation, Aora fosters a community of creativity by allowing users to share their own content. Built with **React Native** and **Expo**, the app provides a seamless experience across various devices.
 
+## Features
+
+- **AI Video Generation**: Effortlessly create stunning videos by providing simple prompts. Aora harnesses advanced AI technology to transform your ideas into captivating visual content.
+- **User-Generated Content**: Users can upload and share their videos, cultivating a vibrant community of creativity and collaboration.
+- **Intuitive User Interface**: Aora is designed for ease of use, ensuring that both beginners and experienced users can navigate the app with ease.
+- **Social Sharing**: Easily share generated and user-uploaded videos on social media platforms, boosting visibility and engagement.
+
+## Installation
+
+To get started with Aora, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/samranahm/aora.git
+   cd aora
+   
+2. **Install dependencies**:
    ```bash
    npm install
-   ```
 
-2. Start the app
-
+3. **Run the application**:
    ```bash
-    npx expo start
-   ```
+   npm start
 
-In the output, you'll find options to open the app in a
+## Download the APK
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+You can download the latest APK from the [Releases page](https://github.com/samranahm/aora/releases).
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Usage
 
-## Get a fresh project
+After installing the app, users can start generating videos by entering prompts. The app provides a straightforward interface for uploading and sharing personal videos, fostering creativity and collaboration.
 
-When you're ready, run:
+## Contributing
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Contributions are welcome! Please fork the repository and submit a pull request for any features or bug fixes you would like to add.
