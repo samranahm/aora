@@ -21,7 +21,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff",
         "package": "com.expensify.aora"
-      }
+      },
+      "package": "com.samranahm.aora"
     },
     "web": {
       "bundler": "metro",
@@ -33,6 +34,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d110ce3a-6cc9-474e-bb53-9001675f78d2"
+      }
     }
   }
 }
